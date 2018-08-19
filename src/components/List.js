@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { ScrollView } from 'react-native';
 import axios from 'axios';
 import Detail from './Detail';
 
@@ -23,9 +23,9 @@ export default class List extends Component {
     render() {
         console.log('render');
         return (
-            <View style={{ marginTop: 5 }}>
+            <ScrollView style={{ marginTop: 5 }}>
                 {this.renderData()}
-            </View>
+            </ScrollView>
         );
     };
 };
